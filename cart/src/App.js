@@ -2,9 +2,11 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Productlist from './Component/Product/productlist';
+import Head from './Component/Head';
+import Card from './Component/Card';
 
-//import { BrowserRouter, Route, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Display from './Component/Product/Display';
 function App() {
   return (
     // <div className="App">
@@ -60,7 +62,15 @@ function App() {
     //         </div>
     //       </Router>
     <div className="App">
-      <Productlist/>
+      <Router>
+       <Switch>
+        <Route  exact path={"/"} component={Head}/>
+        <Route path={"/productlist"} component={Productlist}/>
+        <Route path={"/card"} component={Card}/>
+        <Route path={"/details"} component={Display}/>
+        </Switch>
+      </Router>
+      
     </div>
         );
 }
