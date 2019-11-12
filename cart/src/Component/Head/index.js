@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import Image from 'react-bootstrap/Image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 export default class Head extends Component{
     render(){
@@ -15,7 +14,6 @@ export default class Head extends Component{
                         </div>
                     </div>
                     </nav>
-                    <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGiFtPRW-hDG-DJJ5fMb4e024jyQkAf2-HjAoDZJ9nlRAF-9Wk" rounded style={{marginTop:"5px",width:"1300px",height:"500px"}} />
                 </div>
         );
     }

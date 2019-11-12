@@ -1,0 +1,26 @@
+form {
+    margin-top: 10px;
+}
+.d1 {
+    text-align:right;
+    padding:5px;
+    width:40%;
+    display:inline-block;
+    vertical-align:top;
+    
+}
+.d2 {
+    text-align: left;
+    display:inline-block;
+    vertical-align:middle;
+    width:48%;
+}
+.input {
+    height: 20px;
+    width: 280px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    
+}

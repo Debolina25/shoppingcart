@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
-import Base from '../Button';
+import Base from '../../Component/Button';
 //import Product from './Product';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default class Display extends Component{
     constructor(props) {
         super(props);
         this.state = {quantity: 1};
         
       }
-      addToCart(){
-          alert("the item is successfully added in card");
-      }
+     
       handleInputChange = event => 
           this.setState({[event.target.name]: event.target.value})
-
+      
 
     render(){
+        
         return(
-            <div className="container">
+            <div className=" container">
                     
             <div className="card" style={{ border:"1px solid black",marginTop:"10px", height:"200px"}}>
            <div className="card-body">
@@ -30,10 +30,10 @@ export default class Display extends Component{
                  <input type="number" value={this.state.quantity} name="quantity" 
                     onChange={this.handleInputChange}  
                     style={{ width: "60px", marginRight: "10px",marginTop:"15px", borderRadius: "0px"}}/>
-                 <Base variant="warning " text="Add to cart" click={this.addToCart.bind(this)}/>
+                <Link to={'/card'} ><Base variant="warning " text="Add to cart" /></Link>
               </div>
               <br/>
-              <Link to={'/buy'}><Base variant="success" text="Buy Now" /></Link>
+              <Link to={'/pay'}><Base variant="success" text="Buy Now" /></Link>
             </div>
             </div>
             </div>
