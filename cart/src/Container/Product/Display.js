@@ -20,7 +20,7 @@ export default class Display extends Component{
         return(
             <div className=" container">
                     
-            <div className="card" style={{ border:"1px solid black",marginTop:"10px", height:"200px"}}>
+            <div className="card" style={{ border:"1px solid black",marginTop:"10px", height:"400px"}}>
            <div className="card-body">
                
                 <h2 className="card-title">{this.props.name}</h2>
