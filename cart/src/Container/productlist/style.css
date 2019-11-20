@@ -1,0 +1,16 @@
+/* .ui {
+    border:"2px solid black";
+    margin-top: "10px";
+     height:"200px";
+     width:"300px"
+} */
+.images {
+     height:380px;
+     width:500px;
+ }
+ .image_div {
+     display: inline-block;
+     background-color: antiquewhite;
+     margin:10px;
+     position: unset;
+ }

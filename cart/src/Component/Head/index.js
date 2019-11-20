@@ -9,6 +9,7 @@ export default class Head extends Component{
                     <div className="container">
                         <h3 className="navbar-brand" >Debs Fashion</h3>
                         <div className="navbar-nav">
+                            <Link className="nav-item nav-link" to="/deals">Today's Deals</Link>
                             <Link className="nav-item nav-link" to="/productlist">Productlist</Link>
                             <Link className="nav-item nav-link" to="/card">Card</Link>
                         </div>
